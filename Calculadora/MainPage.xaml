@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text="Calculadora de Adição"
+                   FontSize="15"
+                   HorizontalOptions="Center"/>
+                   
+
+            
+            <Entry x:Name="Numero1entrada" Placeholder="Insira o primeiro numero" Keyboard="Numeric"/>
+            <Entry x:Name="Numero2entrada" Placeholder="Insira o segundo numero" Keyboard="Numeric"/>
+            <Button Text="Somar" Clicked="BTNsomarClicked"/>
+            
+       
+            <Label 
+                x:Name="ResultLabel"  
+                
+                FontSize="Large" 
+                TextColor="Black"/>
+
+            <Label Text="Calculadora de Subtracão"
+           FontSize="15"
+           HorizontalOptions="Center"/>
+
+            <Entry x:Name="Numerosubtrair1" Placeholder="Insira o primeiro numero" Keyboard="Numeric"/>
+            <Entry x:Name="Numerosubtrair2" Placeholder="Insira o segundo numero" Keyboard="Numeric"/>
+            <Button Text="Subtrair" Clicked="BTNsubtrairClicked"/>
+
+            <Label 
+              x:Name="resultadosubtracao"  
+              FontSize="Large" 
+              TextColor="Black"/>
+            
+            
+            <Label Text="Calculadora de Multiplicação"
+             FontSize="15"
+             HorizontalOptions="Center"/>
+
+            <Entry x:Name="Numeromultiplicar1" Placeholder="Insira o primeiro numero" Keyboard="Numeric"/>
+            <Entry x:Name="Numeromultiplicar2" Placeholder="Insira o segundo numero" Keyboard="Numeric"/>
+            <Button Text="Multiplicar" Clicked="BTNmultiplicarCliked"/>
+            
+            <Label 
+             x:Name="resultadomultiplicacao"
+             FontSize="Large" 
+             TextColor="Black"/>
+
+            <Label Text="Calculadora de Divisão"
+             FontSize="15"
+             HorizontalOptions="Center"/>
+
+            <Entry x:Name="Numerodividir1" Placeholder="Insira o primeiro numero" Keyboard="Numeric"/>
+            <Entry x:Name="Numerodividir2" Placeholder="Insira o segundo numero" Keyboard="Numeric"/>
+            <Button Text="Dividir" Clicked="BTNdividirCliked"/>
+
+            <Label 
+             x:Name="resultadodivisao"
+             FontSize="Large" 
+             TextColor="Black"/>
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
